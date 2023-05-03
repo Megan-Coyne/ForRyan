@@ -1,10 +1,17 @@
 body {
     background-color: rgb(242, 199, 255);
+    min-height: 100vh;
 }
 
 div {
     width: 100vw;
     height: 100vh;
+    padding: 1em;
+    margin: 0 -1em;
+}
+
+html {
+    min-height: fit-content;
 }
 
 #border {
@@ -98,9 +105,19 @@ div {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+p {
     font-family: "Lucida Console", "Courier New", monospace;
     color: rgb(205, 10, 42)
+}
+
+figure {
+    font-family: "American Typewriter", serif;
+    color: rgb(68, 16, 240);
+    font-weight: bold;
+    font-size: large;
 }
 
 span {
