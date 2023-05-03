@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<div>
+
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <center>
+
+    <body id="border">
+        <div>
+            <h1>
+                see you August <span id="Date"></span>th!
+            </h1>
+        </div>
+
+        <script>
+            const date = localStorage.getItem('Date');
+
+            document.getElementById('Date').textContent = date;
+
+        </script>
+
+    </body>
+    </center>
+    </head>
+</div>
+
+</html>

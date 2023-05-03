@@ -10,10 +10,28 @@
     <body id="border">
         <div>
             <h1>
-                hey <br>
+                enter your move in day below please<br>
             </h1>
 
+            <form id="form" action="myloveandaffection3.html">
+                <h2>August <input type="text" name="date" id="date" /> th</h2>
+                <a href="myloveandaffection3.html"><input type="submit" value="Submit"></a>
+            </form>
         </div>
+        <script>
+            const form = document.getElementById('form');
+            const date = document.getElementById('date');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                const dateValue = date.value;
+
+                localStorage.setItem("Date", dateValue);
+
+                window.location.href = "myloveandaffection3.html";
+            })
+        </script>
     </body>
     </center>
 
